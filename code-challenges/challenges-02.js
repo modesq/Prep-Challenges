@@ -10,10 +10,12 @@
 
 const reverseArray = (arr) => {
   // write your code here
- for (var i = 0; i < arr.length; i++) {
-    arr.push(arr.pop());
+  var result = [];
+  while (arr.length) {
+    result.push(arr.pop());
   }
-  return arr;
+
+  return result;
 };
 // -------------------------------------------------------------------------------------------------------
 // -------------------------------------------------------------------------------------------------------
