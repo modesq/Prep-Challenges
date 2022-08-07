@@ -3,18 +3,17 @@
 //  Challenge 01:
 //  Required:
 //
-//  Write a function that takes an array and returns the reversed array.  
+//  Write a function that takes an array and returns the reversed array.
 //  Without using built-in methods.
 //  Input: ['C#', 'JS', 'Ruby','Python']
 //  Output: ['Python','Ruby','JS','C#']
 
 const reverseArray = (arr) => {
   // write your code here
-  var Output = [];
-  for (var i = 0; i < arr.length; i++) {
-    Output.push(arr.pop());
+ for (var i = 0; i < arr.length; i++) {
+    arr.push(arr.pop());
   }
-  return Output;
+  return arr;
 };
 // -------------------------------------------------------------------------------------------------------
 // -------------------------------------------------------------------------------------------------------
@@ -29,10 +28,11 @@ const reverseArray = (arr) => {
 
 const arrInc = (arr) => {
   const result = [];
+  // write your code here
   for (let i = 0; i < arr.length; i++) {
-    arr[i] += 10;
-  return result;
+    result[i] = arr[i] + 10;
   }
+  return result;
 };
 
 // -------------------------------------------------------------------------------------------------------
